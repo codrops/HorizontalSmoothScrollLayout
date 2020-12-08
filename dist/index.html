@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Horizontal Smooth Scroll Layout | Demo 1 | Codrops</title>
+		<meta name="description" content="A horizontal smooth scroll layout powered by Locomotive Scroll">
+		<meta name="keywords" content="locomotive scroll, smooth scroll, horizontal, layout, web design, javascript, css">
+		<meta name="author" content="Codrops">
+		<link rel="shortcut icon" href="/favicon.26242483.ico">
+		<link rel="stylesheet" href="https://use.typekit.net/vxy2fer.css">
+		<link rel="stylesheet" type="text/css" href="/base.98fd6c19.css">
+		<link rel="stylesheet" type="text/css" href="/demo1.ea7e4db3.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+		<script>document.documentElement.className = "js";
+
+var supportsCssVars = function supportsCssVars() {
+  var e,
+      t = document.createElement("style");
+  return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
+};
+
+supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		<!--script src="//tympanus.net/codrops/adpacks/analytics.js"></script-->
+	<script src="/base.98fd6c19.js"></script><script src="/demo1.ea7e4db3.js"></script><script src="/index2.js"></script></head>
+	<body class="demo-1 loading">
+		<div class="frame"><!-- don't put fixed elements into the scroll container! -->
+			<h1 class="frame__title">Horizontal Smooth Scroll Layout <br> using <a href="https://locomotivemtl.github.io/locomotive-scroll/">Locomotive Scroll</a></h1>
+			<div class="frame__demos">
+				<a class="frame__demo frame__demo--current" href="/index.html">Demo__01</a>
+				<a class="frame__demo" href="/index2.html">Demo__02</a>
+				<a class="frame__demo" href="/index3.html">Demo__03</a>
+				<a class="frame__demo" href="/index4.html">Demo__04</a>
+				<a class="frame__demo" href="/index5.html">Demo__05</a>
+			</div>
+			<div class="frame__links">
+				<a href="https://tympanus.net/Development/ImageStackGrid/">Previous demo</a>
+				<a href="https://tympanus.net/codrops/?p=52157">Article</a>
+				<a href="https://github.com/codrops/HorizontalSmoothScrollLayout/">GitHub</a>
+			</div>
+		</div>
+		<main data-scroll-container="">
+			<div class="content">
+				<div class="gallery">
+					<figure class="gallery__item">
+						<div class="gallery__item-img"><div class="gallery__item-imginner" style="background-image: url(/1.e7864b95.jpg)"></div></div>
+						<figcaption class="gallery__item-caption">
+							<h2 class="gallery__item-title" data-scroll="" data-scroll-speed="1">Funambulist</h2>
+							<span class="gallery__item-number">01</span>
+							<p class="gallery__item-tags">
+								<span>#house</span>
+								<span>#green</span>
+								<span>#chair</span>
+							</p>
+							<a class="gallery__item-link">explore</a>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img"><div class="gallery__item-imginner" style="background-image: url(/2.dd89043e.jpg)"></div></div>
+						<figcaption class="gallery__item-caption">
+							<h2 class="gallery__item-title" data-scroll="" data-scroll-speed="1">Omophagy</h2>
+							<span class="gallery__item-number">02</span>
+							<p class="gallery__item-tags">
+								<span>#love</span>
+								<span>#hug</span>
+								<span>#people</span>
+							</p>
+							<a class="gallery__item-link">explore</a>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img"><div class="gallery__item-imginner" style="background-image: url(/3.ecfa820e.jpg)"></div></div>
+						<figcaption class="gallery__item-caption">
+							<h2 class="gallery__item-title" data-scroll="" data-scroll-speed="1">Conniption</h2>
+							<span class="gallery__item-number">03</span>
+							<p class="gallery__item-tags">
+								<span>#hike</span>
+								<span>#nature</span>
+								<span>#rain</span>
+							</p>
+							<a class="gallery__item-link">explore</a>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img"><div class="gallery__item-imginner" style="background-image: url(/4.8ed29d64.jpg)"></div></div>
+						<figcaption class="gallery__item-caption">
+							<h2 class="gallery__item-title" data-scroll="" data-scroll-speed="1">Xenology</h2>
+							<span class="gallery__item-number">04</span>
+							<p class="gallery__item-tags">
+								<span>#free</span>
+								<span>#wood</span>
+								<span>#fire</span>
+							</p>
+							<a class="gallery__item-link">explore</a>
+						</figcaption>
+					</figure>
+					<div class="gallery__text"><span class="gallery__text-inner" data-scroll="" data-scroll-speed="3">Pollex</span><span data-scroll="" data-scroll-speed="1" class="gallery__text-inner">Mallam</span></div>
+					<figure class="gallery__item">
+						<div class="gallery__item-img"><div class="gallery__item-imginner" style="background-image: url(/5.7795c51e.jpg)"></div></div>
+						<figcaption class="gallery__item-caption">
+							<h2 class="gallery__item-title" data-scroll="" data-scroll-speed="1">Lycanthropy</h2>
+							<span class="gallery__item-number">05</span>
+							<p class="gallery__item-tags">
+								<span>#cloud</span>
+								<span>#lake</span>
+								<span>#frog</span>
+							</p>
+							<a class="gallery__item-link">explore</a>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img"><div class="gallery__item-imginner" style="background-image: url(/6.ac3cd742.jpg)"></div></div>
+						<figcaption class="gallery__item-caption">
+							<h2 class="gallery__item-title" data-scroll="" data-scroll-speed="1">Mudlark</h2>
+							<span class="gallery__item-number">06</span>
+							<p class="gallery__item-tags">
+								<span>#tent</span>
+								<span>#flower</span>
+								<span>#love</span>
+							</p>
+							<a class="gallery__item-link">explore</a>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img"><div class="gallery__item-imginner" style="background-image: url(/7.4183a781.jpg)"></div></div>
+						<figcaption class="gallery__item-caption">
+							<h2 class="gallery__item-title" data-scroll="" data-scroll-speed="1">Illywhacker</h2>
+							<span class="gallery__item-number">07</span>
+							<p class="gallery__item-tags">
+								<span>#water</span>
+								<span>#bottle</span>
+								<span>#hand</span>
+							</p>
+							<a class="gallery__item-link">explore</a>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img"><div class="gallery__item-imginner" style="background-image: url(/8.698e0dbd.jpg)"></div></div>
+						<figcaption class="gallery__item-caption">
+							<h2 class="gallery__item-title" data-scroll="" data-scroll-speed="1">Disenthral</h2>
+							<span class="gallery__item-number">08</span>
+							<p class="gallery__item-tags">
+								<span>#night</span>
+								<span>#stars</span>
+								<span>#moon</span>
+							</p>
+							<a class="gallery__item-link">explore</a>
+						</figcaption>
+					</figure>
+					<div class="gallery__text"><span class="gallery__text-inner" data-scroll="" data-scroll-speed="1">Cacoe</span><span data-scroll="" data-scroll-speed="3" class="gallery__text-inner">Dupis</span></div>
+					<figure class="gallery__item">
+						<div class="gallery__item-img"><div class="gallery__item-imginner" style="background-image: url(/9.16738e2f.jpg)"></div></div>
+						<figcaption class="gallery__item-caption">
+							<h2 class="gallery__item-title" data-scroll="" data-scroll-speed="1">Abaya</h2>
+							<span class="gallery__item-number">09</span>
+							<p class="gallery__item-tags">
+								<span>#sun</span>
+								<span>#light</span>
+								<span>#air</span>
+							</p>
+							<a class="gallery__item-link">explore</a>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img"><div class="gallery__item-imginner" style="background-image: url(/10.e7aba2b1.jpg)"></div></div>
+						<figcaption class="gallery__item-caption">
+							<h2 class="gallery__item-title" data-scroll="" data-scroll-speed="1">Hallux</h2>
+							<span class="gallery__item-number">10</span>
+							<p class="gallery__item-tags">
+								<span>#vital</span>
+								<span>#fog</span>
+								<span>#close</span>
+							</p>
+							<a class="gallery__item-link">explore</a>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img"><div class="gallery__item-imginner" style="background-image: url(/11.e75a941d.jpg)"></div></div>
+						<figcaption class="gallery__item-caption">
+							<h2 class="gallery__item-title" data-scroll="" data-scroll-speed="1">Lablab</h2>
+							<span class="gallery__item-number">11</span>
+							<p class="gallery__item-tags">
+								<span>#cover</span>
+								<span>#bed</span>
+								<span>#window</span>
+							</p>
+							<a class="gallery__item-link">explore</a>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img"><div class="gallery__item-imginner" style="background-image: url(/12.4061d1aa.jpg)"></div></div>
+						<figcaption class="gallery__item-caption">
+							<h2 class="gallery__item-title" data-scroll="" data-scroll-speed="1">Momisom</h2>
+							<span class="gallery__item-number">12</span>
+							<p class="gallery__item-tags">
+								<span>#sad</span>
+								<span>#mouth</span>
+								<span>#tear</span>
+							</p>
+							<a class="gallery__item-link">explore</a>
+						</figcaption>
+					</figure>
+					<div class="gallery__text"><span class="gallery__text-inner" data-scroll="" data-scroll-speed="4">Chad</span><span data-scroll="" data-scroll-speed="1" class="gallery__text-inner">Chiliad</span></div>
+				</div>
+			</div>
+		</main>
+		<svg class="cursor" width="20" height="20" viewBox="0 0 20 20">
+			<circle class="cursor__inner" cx="10" cy="10" r="5"></circle>
+		</svg>
+		<script src="/demo1.151408fb.js"></script>
+		<!--script src="https://tympanus.net/codrops/adpacks/cda.js"></script-->
+	</body>
+</html>

@@ -1,0 +1,255 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 12px;
+}
+
+body {
+	margin: 0;
+	--color-text: #000100;
+	--color-bg: #e2d9c7;
+	--color-link: #395bb5;
+	--color-link-hover: #000100;
+	--color-gallery-title: #2c2724;
+	--color-gallery-number: #d9d0be;
+	--color-gallery-link: #fff;
+	--color-gallery-link-bg: #2858d7;
+	--color-gallery-link-hover: #fff;
+	--color-gallery-link-bg-hover: #d4b77d;
+	color: var(--color-text);
+	background-color: var(--color-bg);
+	--cursor-stroke: none;
+	--cursor-fill: #c5681c;
+	--cursor-stroke-width: 1px;
+	font-family: halyard-display, sans-serif;
+	font-weight: 300;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Page Loader */
+.js .loading::before,
+.js .loading::after {
+	content: '';
+	position: fixed;
+	z-index: 1000;
+}
+
+.js .loading::before {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--color-bg);
+}
+
+.js .loading::after {
+	top: 50%;
+	left: 50%;
+	width: 60px;
+	height: 60px;
+	margin: -30px 0 0 -30px;
+	border-radius: 50%;
+	opacity: 0.4;
+	background: var(--color-link);
+	animation: loaderAnim 0.7s linear infinite alternate forwards;
+
+}
+
+@keyframes loaderAnim {
+	to {
+		opacity: 1;
+		transform: scale3d(0.5,0.5,1);
+	}
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-link);
+	outline: none;
+}
+
+a:hover,
+a:focus {
+	color: var(--color-link-hover);
+	outline: none;
+}
+
+.frame {
+	padding: 3rem 5vw;
+	text-align: center;
+	position: relative;
+	z-index: 1000;
+	text-transform: uppercase;
+}
+
+.frame__title {
+	font-size: 1rem;
+	margin: 0 0 1rem;
+	font-weight: 300;
+}
+
+.frame__links {
+	display: inline;
+}
+
+.frame__links a:not(:last-child) {
+	margin-right: 1rem;
+}
+
+.frame__demo {
+	margin: 0 1rem;
+}
+
+.frame__demo--current,
+.frame__demo--current:hover {
+	color: var(--color-text);
+	cursor: default;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	height: calc(100vh - 13rem);
+	position: relative;
+	justify-content: flex-start;
+}
+
+.cursor {
+	display: none;
+}
+
+@media screen and (min-width: 53em) {
+	.frame {
+		position: fixed;
+		text-align: left;
+		z-index: 100;
+		top: 0;
+		left: 0;
+		display: grid;
+		align-content: space-between;
+		width: 100%;
+		max-width: none;
+		padding: 1.75rem;
+		pointer-events: none;
+		grid-template-columns: auto 1fr 1fr auto;
+		grid-template-rows: auto;
+		grid-template-areas: 'title demos demos links';
+	}
+	.frame__title {
+		margin: 0 4rem 0 0;
+		grid-area: title;
+	}
+	.frame__info {
+		grid-area: info;
+	}
+	.frame__demos {
+		grid-area: demos;
+	}
+	.frame__links {
+		grid-area: links;
+		padding: 0;
+		justify-self: end;
+	}
+	.frame a {
+		pointer-events: auto;
+	}
+	.content {
+		height: 100vh;
+		justify-content: center;
+	}
+}
+
+@media (any-pointer:fine) {
+	.cursor {
+		position: fixed;
+		top: 0;
+		left: 0;
+		display: block;
+		pointer-events: none;
+	}
+
+	.cursor__inner {
+		fill: var(--cursor-fill);
+		stroke: var(--cursor-stroke);
+		stroke-width: var(--cursor-stroke-width);
+		opacity: 0.7;
+	}
+
+	.no-js .cursor {
+		display: none;
+	}
+
+}
+
+/*! locomotive-scroll v4.0.4 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
+html.has-scroll-smooth {
+	overflow: hidden; }
+  
+  html.has-scroll-dragging {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none; }
+  
+  .has-scroll-smooth body {
+	overflow: hidden; }
+  
+  .has-scroll-smooth [data-scroll-container] {
+	min-height: 100vh; }
+  
+  [data-scroll-direction="horizontal"] [data-scroll-container] {
+	white-space: nowrap;
+	height: 100vh;
+	display: inline-block;
+	white-space: nowrap; }
+  
+  [data-scroll-direction="horizontal"] [data-scroll-section] {
+	display: inline-block;
+	vertical-align: top;
+	white-space: nowrap;
+	height: 100%; }
+  
+  .c-scrollbar {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 11px;
+	height: 100%;
+	transform-origin: center right;
+	transition: transform 0.3s, opacity 0.3s;
+	opacity: 0; }
+	.c-scrollbar:hover {
+	  transform: scaleX(1.45); }
+	.c-scrollbar:hover, .has-scroll-scrolling .c-scrollbar, .has-scroll-dragging .c-scrollbar {
+	  opacity: 1; }
+	[data-scroll-direction="horizontal"] .c-scrollbar {
+	  width: 100%;
+	  height: 10px;
+	  top: auto;
+	  bottom: 0;
+	  transform: scaleY(1); }
+	  [data-scroll-direction="horizontal"] .c-scrollbar:hover {
+		transform: scaleY(1.3); }
+  
+  .c-scrollbar_thumb {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: black;
+	opacity: 0.5;
+	width: 7px;
+	border-radius: 10px;
+	margin: 2px;
+	cursor: -webkit-grab;
+	cursor: grab; }
+	.has-scroll-dragging .c-scrollbar_thumb {
+	  cursor: -webkit-grabbing;
+	  cursor: grabbing; }
+	[data-scroll-direction="horizontal"] .c-scrollbar_thumb {
+	  right: auto;
+	  bottom: 0; }
