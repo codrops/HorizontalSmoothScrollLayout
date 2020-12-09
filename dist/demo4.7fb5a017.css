@@ -121,7 +121,7 @@ body {
 .gallery__text {
 	font-size: 20vw;
 	line-height: 0.8;
-	padding: 0 10vw 0 14vw;
+	margin: 0 10vw 0 14vw;
 	text-transform: lowercase;
 	color: transparent;
 	-webkit-text-stroke: 1px var(--color-gallery-text);
@@ -133,5 +133,3 @@ body {
 .gallery__text-inner {
 	display: block;
 }
-
-/*# sourceMappingURL=/demo4.7fb5a017.css.map */

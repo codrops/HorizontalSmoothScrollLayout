@@ -108,8 +108,7 @@
 .gallery__text {
 	font-size: 20vw;
 	line-height: 0.8;
-	padding: 0 10vw 0 14vw;
-	text-indent: -4vw;
+	margin: 0 10vw 0 14vw;
 	text-transform: lowercase;
 	color: var(--color-gallery-title);
 	color: transparent;
@@ -122,5 +121,3 @@
 .gallery__text-inner {
 	display: block;
 }
-
-/*# sourceMappingURL=/demo1.ea7e4db3.css.map */

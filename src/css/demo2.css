@@ -126,8 +126,7 @@ body {
 .gallery__text {
 	font-size: 20vw;
 	line-height: 0.8;
-	text-indent: -10vw;
-	padding: 0 17vw;
+	margin: 0 12vw;
 	text-transform: lowercase;
 	color: transparent;
 	-webkit-text-stroke: 1px #645c5b;
